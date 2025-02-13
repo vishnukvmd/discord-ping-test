@@ -1,0 +1,16 @@
+name: "Discord Ping Test"
+
+on:
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord Notification
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "🔔 Test Notification"
+          description: "Hey <@${{ secrets.DISCORD_USER_ID }}>, this is a test ping!"
+          color: 0x00ff00
