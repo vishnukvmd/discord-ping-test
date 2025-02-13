@@ -12,6 +12,6 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           nodetail: true
-          title: "🏆 Internal release available"
+          title: "🏆 Internal release available for Photos"
           description: "[Download](https://play.google.com/store/apps/details?id=io.ente.photos)"
-          color: 0x800080
+          color: 0x00ff00
