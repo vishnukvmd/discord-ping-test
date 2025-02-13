@@ -12,6 +12,6 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           nodetail: true
-          title: `🏆 Internal release available v${{ github.event.release.tag_name }}`
+          title: `🏆 Internal release available`
           description: `[Download here](https://play.google.com/store/apps/details?id=io.ente.photos)`
           color: 0x00ff00
